@@ -6,6 +6,7 @@ WORKDIR /app
 # Dépendances système minimales
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Installer les dépendances Python

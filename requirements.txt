@@ -1,11 +1,10 @@
-# TANEKOU BOT PO — Dépendances v2.1
-# websockets : large range — _ws_open() gère le fallback automatiquement
-# pour toutes les versions 9.x → 13.x
+# TANEKOU BOT PO — Dépendances v2.2 (fix Python 3.11 compatibility)
+# pandas-ta==0.3.14b0 exige Python <3.11 → remplacé par branche dev GitHub
 
 python-telegram-bot==20.7
 pandas==2.1.4
 numpy==1.26.2
-pandas-ta==0.3.14b0
+pandas-ta @ git+https://github.com/twopirllc/pandas-ta.git@development
 python-dotenv==1.0.0
 aiofiles==23.2.1
 APScheduler==3.10.4
